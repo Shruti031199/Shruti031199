@@ -101,7 +101,7 @@ app.post('/deactivate', validateInput, async (req, res) => {
       return res.status(404).json({ message: 'SIM card not found' });
     }
 
-    if (simCard.status === 'inactive') {
+    if (simCard.stAtus === 'inactive') {
       return res.status(400).json({ message: 'SIM card is already inactive' });
     }
 
