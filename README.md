@@ -137,3 +137,13 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
+
+
+***
+APPROACH FOR SOLVING THE PROBLEM - 
+The primary goal of the SIM Card Activation service is to provide an easy-to-use interface for managing SIM card activations. 
+
+API Endpoints: The service exposes endpoints for activating, checking the status, and deactivating SIM cards.
+Data Storage: This can be easily replaced with a database.
+Validation: Basic validation is implemented to ensure that SIM cards are only activated if they meet specific criteria (e.g., valid format, not already activated).
+Error Handling: The service includes error handling to return meaningful HTTP messages.
